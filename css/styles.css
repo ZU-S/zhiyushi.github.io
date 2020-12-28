@@ -2,6 +2,41 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+.resume{
+	margin: 0 auto;
+	width: 800px;
+	@media screen and (max-width: 860px){
+		margin-left:0;
+		width: 100%
+	}
+}
+
+.resume-content{
+	float: right;
+	width: 580px;
+	@media screen and (max-width: 860px){
+		width: 100%
+		margin-left: -210px;
+	}
+	@media screen and (max-width: 500px){
+		margin-left:0;
+		float: none;
+	}
+}
+
+.resume-entry{
+	margin: 30px;
+	@media screen and (max-width: 860px){
+		margin-left: 200px;
+	}
+	@media screen and (max-width: 500px){
+		padding-left: 30px;
+		margin-left: 0px;
+	}
+}
+
+
+
 form {
 	max-width: 500px;
 	margin: 0 auto;
@@ -58,7 +93,7 @@ input:focus, textarea:focus {
 h1, h2, h3 {
 	font-family: 'Open Sans', sans-serif;
 	letter-spacing: 1px;
-	font-weight: 300;
+	font-weight: 500;
 	margin-bottom: 20px;
 }
 
@@ -87,6 +122,7 @@ h1, h2, h3 {
 }
 
 .portfolio-img {
+	margin: 0 auto;
 	width: 100%;
 	max-height: 300px;
 	display: block;
@@ -95,6 +131,7 @@ h1, h2, h3 {
 
 .project-img {
 	width: 100%;
+	max-height: 300px;
 	display: block;
 	object-fit: cover;
 }
